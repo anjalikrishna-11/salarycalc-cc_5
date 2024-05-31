@@ -33,6 +33,13 @@ class Manager extends Employee {
         console.log(`Annual Salary (before bonus): $${baseAnnualSalary}`);
         console.log(`Bonus: $${bonus}`);
         console.log(`Total Annual Salary (including bonus): $${totalAnnualSalary}\n`);
-        return totalAnnualSalary;
+        return totalAnnualSalary; // 
     }
 }
+// Test Data
+// Instantiate a Manager object for Bob Ross
+const manager1 = new Manager('Bob Ross', 6600.00, 'Digital Marketing'); 
+manager1.calculateAnnualSalary(); // Calculate and log the annual salary including the bonus
+// Instantiate a Manager object for Debbie Little 
+const manager2 = new Manager('Debbie Little', 7205.00, 'Finance'); 
+manager2.calculateAnnualSalary(); // Calculate and log the annual salary including the bonus
